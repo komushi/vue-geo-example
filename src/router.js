@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-// import Geo2LayerLoader from '@/views/Geo2LayerLoader'
-// import GeoEventsLoader from '@/views/GeoEventsLoader'
 
 Vue.use(Router)
 
@@ -24,6 +22,17 @@ export default new Router({
       path: '/GeoEventsLoader',
       name: 'GeoEventsLoader',
       component: () => import('./views/GeoEventsLoader.vue')
+    },
+    {
+      path: '/GeoStaticJapanLoader',
+      name: 'GeoStaticJapanLoader',
+      component: () => import('./views/GeoStaticJapanLoader.vue')
+    },
+    {
+      path: '/GeoStaticEuropeLoader',
+      name: 'GeoStaticEuropeLoader',
+      component: () => import('./views/GeoStaticEuropeLoader.vue')
     }
+
   ]
 })

@@ -1,4 +1,5 @@
 # vue-geo-example
+Demo app powered by [vue-d3-geo](https://github.com/komushi/vue-d3-geo/)
 
 ## Project setup
 ```
@@ -27,3 +28,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Credits:
+* https://github.com/komushi/vue-d3-geo/
+* https://github.com/leakyMirror/map-of-europe/
+* https://github.com/dataofjapan/land/
