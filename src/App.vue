@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/GeoEventsLoader">GeoEventsLoader</router-link> |
+      <router-link to="/Geo2LayerLoader">Geo2LayerLoader</router-link>
     </div>
     <router-view/>
   </div>

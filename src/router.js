@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+// import Geo2LayerLoader from '@/views/Geo2LayerLoader'
+// import GeoEventsLoader from '@/views/GeoEventsLoader'
 
 Vue.use(Router)
 
@@ -14,12 +16,14 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: '/Geo2LayerLoader',
+      name: 'Geo2LayerLoader',
+      component: () => import('./views/Geo2LayerLoader.vue')
+    },
+    {
+      path: '/GeoEventsLoader',
+      name: 'GeoEventsLoader',
+      component: () => import('./views/GeoEventsLoader.vue')
     }
   ]
 })
