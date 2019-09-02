@@ -32,7 +32,11 @@ export default new Router({
       path: '/GeoStaticEuropeLoader',
       name: 'GeoStaticEuropeLoader',
       component: () => import('./views/GeoStaticEuropeLoader.vue')
+    },
+    {
+      path: '/GeoStaticUSLoader',
+      name: 'GeoStaticUSLoader',
+      component: () => import('./views/GeoStaticUSLoader.vue')
     }
-
   ]
 })

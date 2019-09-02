@@ -1,6 +1,9 @@
 # vue-geo-example
 Demo app powered by [vue-d3-geo](https://github.com/komushi/vue-d3-geo/)
 
+![europe](https://raw.githubusercontent.com/komushi/vue-geo-example/master/images/europe.jpg)
+![screenshot](https://raw.githubusercontent.com/komushi/vue-geo-example/master/images/screenshot.jpg)
+
 ## Project setup
 ```
 npm install
@@ -10,24 +13,6 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Credits:
 * https://github.com/komushi/vue-d3-geo/

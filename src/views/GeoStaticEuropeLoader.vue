@@ -3,9 +3,9 @@
      <d3-geo-static 
       id="01"
       topojson-path="data/europe.topojson"
-      layerObjects="europe"
-      layerFeatureName="properties.NAME"
-      layerFeatureCode="properties.NAME"
+      layer-objects="europe"
+      layer-feature-name="properties.NAME"
+      layer-feature-code="id"
       scale="800"
       width="1200"
       height="1200"

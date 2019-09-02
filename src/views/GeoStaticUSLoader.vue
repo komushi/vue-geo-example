@@ -2,13 +2,14 @@
   <div>
      <d3-geo-static 
       id="01"
-      topojson-path="data/japan.topojson"
-      layer-objects="japan"
-      layer-feature-name="properties.nam_ja"
-      layer-feature-code="properties.id"
-      scale="3000"
-      width="1600"
-      height="1400"
+      topojson-path="data/states.topojson"
+      layer-objects="states"
+      layer-feature-name="properties.NAME"
+      layer-feature-code="properties.STUSPS"
+      scale="800"
+      width="1024"
+      height="768"
+      center="-99.7506251, 38.7840204"
       >
     </d3-geo-static>
   </div>
@@ -19,7 +20,7 @@ import * as d3geo from 'vue-d3-geo';
 import 'vue-d3-geo/dist/vue-d3-geo.css';
 
 export default {
-  name: 'GeoStaticJapanLoader',
+  name: 'GeoStaticUSLoader',
   data() {
     return {
     };
