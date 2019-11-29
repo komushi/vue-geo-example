@@ -6,7 +6,8 @@
       <router-link to="/Geo2LayerLoader">Geo2LayerLoader</router-link> |
       <router-link to="/GeoStaticJapanLoader">GeoStaticJapanLoader</router-link> |
       <router-link to="/GeoStaticEuropeLoader">GeoStaticEuropeLoader</router-link> |
-      <router-link to="/GeoStaticUSLoader">GeoStaticUSLoader</router-link>
+      <router-link to="/GeoStaticUSLoader">GeoStaticUSLoader</router-link> |
+      <router-link to="/GeoLeafLoader">GeoLeafLoader</router-link>
     </div>
     <router-view/>
   </div>

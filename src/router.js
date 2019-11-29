@@ -37,6 +37,11 @@ export default new Router({
       path: '/GeoStaticUSLoader',
       name: 'GeoStaticUSLoader',
       component: () => import('./views/GeoStaticUSLoader.vue')
+    },
+    {
+      path: '/GeoLeafLoader',
+      name: 'GeoLeafLoader',
+      component: () => import('./views/GeoLeafLoader.vue')
     }
   ]
 })
