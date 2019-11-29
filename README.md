@@ -1,9 +1,10 @@
 # vue-geo-example
 Demo app powered by [vue-d3-geo](https://github.com/komushi/vue-d3-geo/)
 
-![screenshot](https://raw.githubusercontent.com/komushi/vue-geo-example/master/images/leaflet.jpg)
+![screenshot](https://raw.githubusercontent.com/komushi/vue-geo-example/master/images/leaflet.png)
 
 ## src folder structure
+```
 src
 ├── App.vue
 ├── assets
@@ -21,6 +22,7 @@ src
     ├── GeoStaticJapanLoader.vue
     ├── GeoStaticUSLoader.vue
     └── Home.vue
+```    
 
 ## Project setup
 ```
