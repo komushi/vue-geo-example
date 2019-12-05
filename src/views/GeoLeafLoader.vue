@@ -1,14 +1,26 @@
 <template>
   <div>
-    <d3-geo-leaf
-      v-if="currentSubway"
-      id="06" 
-      :geojson-object="currentSubway"
-      color-range='#6f97d9,#6f97d9'
-      >    
-    </d3-geo-leaf>     
-
+    <ul class="horizontal-list">
+        <li>
+           <div v-for="item in apiResponse">
+            <input type="radio" v-model="geojsonString" name="time_window" :value="item.geojson"> {{item.window_start}}
+          </div>
+        </li>
+        <li>
+            <div style="width: 2000px; height: 1200px">
+              <d3-geo-leaf
+                v-if="featureStatistics"
+                id="06" 
+                :geojson-object="featureStatistics"
+                color-range='#0000ff,#e623e4,#ff0000'
+                >    
+              </d3-geo-leaf>
+            </div>
+        </li>
+    </ul>    
   </div>
+
+
 </template>
 
 <script>
@@ -20,16 +32,33 @@ export default {
   name: 'GeoLeafLoader',
   data() {
     return {
-      currentSubway: null
+      geojsonString: null,
+      apiResponse: []
     };
   },
+  computed: {
+    featureStatistics: function() {
+      if (this.geojsonString) {
+        return JSON.parse(this.geojsonString);
+      } else {
+        return null;
+      }
+    }
+  },   
   mounted() {
-    axios.get("data/rinkai.geojson")
+    // axios.get("data/rinkai.geojson")
+    //   .then((response)  =>  {
+    //     this.currentSubway = response.data
+    //   }, (error)  =>  {
+      
+    //   });
+
+    axios.get("data/statistics.json")
       .then((response)  =>  {
-        this.currentSubway = response.data
+        this.apiResponse = response.data
       }, (error)  =>  {
       
-      });
+      });      
   },
   methods: {
   },
@@ -38,3 +67,16 @@ export default {
   }
 }
 </script>
+
+<style>
+.horizontal-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding: 0;
+}
+
+.horizontal-list li {
+    display: inline-block;
+}
+</style>
